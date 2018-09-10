@@ -22,7 +22,7 @@ The Oxford RobotCar dataset was used to test the implementation, and you may dow
 http://robotcar-dataset.robots.ox.ac.uk/
 
 An example of the data:
-Inline-style: 
+(Source: Oxford RobotCar) 
 ![alt text](https://github.com/kuanyewleong/self-driving_car_pedestrian_detection/blob/master/0258.png "sample")
 
 
