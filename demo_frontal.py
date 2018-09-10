@@ -80,7 +80,7 @@ class DetectorAPI:
 # Function to set regions on mask areas
 def get_block_regions():
 
-    '''Initialize two block regions'''
+    # Initialize block regions
     a = 650
     region_1 = np.array([[0, 0], [a, 0], [0, 350]], np.int32)
     region_2 = np.array([[0, 360], [660, 360], [768, 432], [0, 432]], np.int32)
