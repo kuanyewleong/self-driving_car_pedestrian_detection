@@ -12,6 +12,7 @@ A text file of:
 (1) detected bounding boxes
 (2) frame IDs (for video)
 
+A video with bounding boxes.
 
 @author: kuanyew
 """
