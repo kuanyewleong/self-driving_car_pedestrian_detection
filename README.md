@@ -24,7 +24,7 @@ http://robotcar-dataset.robots.ox.ac.uk/
 ## Deep Learning Model
 The model being tested to be achieving the best accuracy is a pre-trained Tensorflow RCNN Inception downloadable from Model Zoo: http://download.tensorflow.org/models/object_detection/mask_rcnn_inception_v2_coco_2018_01_28.tar.gz
 
-After donwload the model, place it in a directory ../tensorflow_model
+After donwload the model, place it in the directory ../tensorflow_model
 
 
 ## How to run both the demos
