@@ -1,5 +1,5 @@
 # Self-driving Car Pedestrian Detection
-This is a demo of pedestrian detection for a self-driving car via a camera sensor. 
+This is a demo of pedestrian detection for a self-driving car via a mono-chrome camera sensor. 
 
 The idea that I have worked on is to apply a pre-trained deep learning model to detect pedestrians along the drive through pathway of a vehicle. I prepare two variant of solutions to demonstrate the usability of such pre-trained model in augmenting a self-driving car.
 
@@ -9,6 +9,7 @@ The idea that I have worked on is to apply a pre-trained deep learning model to 
 - Tensorflow
 - OpenCV
 - Python 3.6 
+
 (one can create an environment with the above packages through Anaconda)
 
 ### Step 2. Clone the repo
