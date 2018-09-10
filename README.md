@@ -21,6 +21,9 @@ git clone https://github.com/kuanyewleong/self-driving_car_pedestrian_detection.
 The Oxford RobotCar dataset was used to test the implementation, and you may download the dataset form the following link. For the demos developed here, only the stereo vision data of the centre camera were used.
 http://robotcar-dataset.robots.ox.ac.uk/
 
+An example of the data:
+
+
 
 ## Deep Learning Model
 The model being tested to be achieving the best accuracy is a pre-trained Tensorflow RCNN Inception downloadable from Model Zoo: http://download.tensorflow.org/models/object_detection/mask_rcnn_inception_v2_coco_2018_01_28.tar.gz
