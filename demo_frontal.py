@@ -3,7 +3,7 @@
 Created on Sep 10 11:53:19 2018
 
 Input arguments:
-video_path = sys.argv[1] should be the input file path
+input_path = sys.argv[1] should be the input directory
 
 Output parameters:
 pedestrian_number
