@@ -104,7 +104,8 @@ if __name__ == "__main__":
     threshold = 0.6
 
     input_path = sys.argv[1]
-
+    
+    # Draw the region that we would like to mask-out
     region_1, region_2, region_3 = get_block_regions()
 
     out = cv2.VideoWriter('Pedestrian_demo_01.mp4', cv2.VideoWriter_fourcc('M','J','P','G'), 20, (768, 432))
@@ -143,11 +144,10 @@ if __name__ == "__main__":
 
             # Detect pedestrian at the frontal pathway only
             cv2.fillPoly(img, [region_1, region_2, region_3], color=(0, 255, 0), lineType=cv2.LINE_AA)
-            img3 = cv2.addWeighted(img, 0.5, img, 0.9, 0)
+            img3 = cv2.addWeighted(img, 0.5, img, 0.9, 0) # mask the unwanted region
             boxes_frontal, scores_frontal, classes_frontal, num_frontal = pedestrian_model.processFrame(img3)
             detect_front = 0
-            for i in range(len(boxes_frontal)):
-                # Class 1 represents human
+            for i in range(len(boxes_frontal)):                
                 if classes_frontal[i] == 1 and scores_frontal[i] > threshold:
                     detect_front += 1
 
@@ -155,7 +155,8 @@ if __name__ == "__main__":
             result_writer.writerow([frame_counter] + [detected])
             result_writer.writerow([copy_box])
             frame_counter += 1
-
+            
+            # Print some info
             cv2.putText(img2, text='Pedestrian along the vehicle\'s frontal pathway: {}'.format(
                 detect_front), org=(50, 400),
                         fontFace=cv2.FONT_HERSHEY_COMPLEX,
