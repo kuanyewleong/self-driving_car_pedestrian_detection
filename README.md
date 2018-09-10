@@ -14,11 +14,13 @@ The idea that I have worked on is to apply a pre-trained deep learning model to 
 
 ### Step 2. Clone the repo
 No compilation or installation is neeeded, just clone the repository.
+
 git clone https://github.com/kuanyewleong/self-driving_car_pedestrian_detection.git
 
 
 ## Dataset
 The Oxford RobotCar dataset was used to test the implementation, and you may download the dataset form the following link. For the demos developed here, only the stereo vision data of the centre camera were used.
+
 http://robotcar-dataset.robots.ox.ac.uk/
 
 An example of the data:
