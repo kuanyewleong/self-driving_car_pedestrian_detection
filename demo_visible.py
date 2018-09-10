@@ -2,8 +2,8 @@
 """
 Created on Sep 10 11:53:19 2018
 
-Input arguments:
-video_path = sys.argv[1] should be the input file path
+Input argument:
+input_path = sys.argv[1] should be the input directory
 
 Output parameters:
 pedestrian_number
@@ -12,6 +12,7 @@ A text file of:
 (1) detected bounding boxes
 (2) frame IDs (for video)
 
+A video with bounding boxes.
 
 @author: kuanyew
 """
