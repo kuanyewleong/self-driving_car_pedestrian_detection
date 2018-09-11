@@ -27,10 +27,12 @@ import glob
 import os
 import re
 
+# Object detection function
 class DetectorAPI:
     def __init__(self, path_to_ckpt):
         self.path_to_ckpt = path_to_ckpt
-
+        
+        # Definitions needed for using Tensorflow
         self.detection_graph = tf.Graph()
         with self.detection_graph.as_default():
             od_graph_def = tf.GraphDef()
@@ -101,7 +103,8 @@ if __name__ == "__main__":
 
         cap = cv2.VideoCapture(input_path)
         all_images = input_path + '/*.png'
-
+        
+        # Sort the image sequences in the folder before processing
         for fn in sorted(glob.glob(all_images), key=key_func):
             img = cv2.imread(fn)
             img = cv2.resize(img, (768, 432))
