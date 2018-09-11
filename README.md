@@ -10,9 +10,9 @@ The idea that I have worked on is to apply a pre-trained deep learning model to 
 - OpenCV
 - Python 3.6 
 
-(one can create an environment with the above packages through Anaconda)
+(one can simply create an environment with the above packages through Anaconda)
 
-### Step 2. Clone the repo
+### Step 2. Clone the repository
 No compilation or installation is neeeded, just clone the repository.
 
 git clone https://github.com/kuanyewleong/self-driving_car_pedestrian_detection.git
@@ -29,7 +29,7 @@ An example of the data:
 
 
 ## Deep Learning Model
-The model being tested to be achieving the best accuracy is a pre-trained Tensorflow RCNN Inception downloadable from Model Zoo: http://download.tensorflow.org/models/object_detection/mask_rcnn_inception_v2_coco_2018_01_28.tar.gz
+The model being tested to be achieving the best accuracy is a pre-trained Tensorflow RCNN Inception (trained with COCO dataset) downloadable from Model Zoo: http://download.tensorflow.org/models/object_detection/mask_rcnn_inception_v2_coco_2018_01_28.tar.gz
 
 After donwload the model, place it in the directory ../tensorflow_model
 
@@ -50,3 +50,6 @@ $ python demo_visible.py <data_directory>
 
 ## Examples
 I have recorded two demo videos for my work. The first video demonstrates pedestrian detection along the drive-through in general. While the other video, which is more emphasized, demonstrates a possible idea to detect both pedestrians that could be obstacles for the self-driving car, as well as the total pedestrian visible to the frontal camera (i.e. pedestrians on the side-way or walkway).
+
+## The Underlying Principles
+The implementation in demo_frontal.py is especially more practical in self-driving car due to the reason that it enables the detection of pedestrians on the vehicle's frontal pathway, meaning it doesn't simply detect all possible pedestrian visible to the centre camera, but it filters those not in the frontal pathway which is most crucial for the vehicle to move forward. However, this is not all, the solution also tries to detect all pedestrians around the visible region of the camera, such that extra information can be process for an even better manoeuvre of the vehicle; for example, one can in the future incorporate such information with fusion with other sensors to give the vehicle an awareness that at a particular surrounding, there is some presence of pedestrians, and hence the travelling mode can be tuned to a different setting as if compared to another surrounding when pesdetrians are not detected. 
