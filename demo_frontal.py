@@ -27,10 +27,12 @@ import glob
 import os
 import re
 
+# Object detection function
 class DetectorAPI:
     def __init__(self, path_to_ckpt):
         self.path_to_ckpt = path_to_ckpt
-
+        
+        # Definitions needed for using Tensorflow
         self.detection_graph = tf.Graph()
         with self.detection_graph.as_default():
             od_graph_def = tf.GraphDef()
