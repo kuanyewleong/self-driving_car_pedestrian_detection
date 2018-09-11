@@ -116,7 +116,6 @@ if __name__ == "__main__":
         result_writer = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 
         frame_counter = 1
-        smooth_control = []
 
         cap = cv2.VideoCapture(input_path)
         all_images = input_path + '/*.png'
