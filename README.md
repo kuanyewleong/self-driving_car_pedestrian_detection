@@ -15,7 +15,7 @@ The idea that I have worked on is to apply a pre-trained deep learning model to 
 - OpenCV
 - Python 3.6 
 
-(one can simply create an environment with the above packages through Anaconda)
+(The implementation was on a Ubuntu 16.04 machine, one can simply create an environment with the above packages through Anaconda)
 
 ### Step 2. Clone the repository
 No compilation or installation is neeeded, just clone the repository.
