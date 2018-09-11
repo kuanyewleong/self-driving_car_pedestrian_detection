@@ -1,5 +1,6 @@
 # Self-driving Car Pedestrian Detection
 ![alt text](https://github.com/kuanyewleong/self-driving_car_pedestrian_detection/blob/master/OxfordRobotCar_dataset.JPG "detection_sample")
+
 (Source: Oxford RobotCar)
 
 This is a demo of pedestrian detection for a self-driving car via a mono-chrome camera sensor. 
