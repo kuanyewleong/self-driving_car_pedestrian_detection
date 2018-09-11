@@ -1,6 +1,13 @@
 # Self-driving Car Pedestrian Detection
 ![alt text](https://github.com/kuanyewleong/self-driving_car_pedestrian_detection/blob/master/OxfordRobotCar_dataset.JPG "detection_sample")
 
+<script src="http://vjs.zencdn.net/4.0/video.js"></script>
+<video id="detection_sample" class="video-js vjs-default-skin" controls
+preload="auto" width="683" height="384" poster="https://github.com/kuanyewleong/self-driving_car_pedestrian_detection/blob/master/OxfordRobotCar_dataset.JPG"
+data-setup="{}">
+<source src="https://vimeo.com/289213981" type='video/mp4'>
+</video>
+
 This is a demo of pedestrian detection for a self-driving car via a mono-chrome camera sensor. 
 
 The idea that I have worked on is to apply a pre-trained deep learning model to detect pedestrians along the drive through pathway of a vehicle. I have prepared two variants of solution to demonstrate the usability of such pre-trained model in augmenting a self-driving car.
