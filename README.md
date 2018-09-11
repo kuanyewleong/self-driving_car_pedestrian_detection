@@ -5,7 +5,7 @@
 
 This is a demo of pedestrian detection for a self-driving car via a mono-chrome camera sensor. 
 
-The idea that I have worked on is to apply a pre-trained deep learning model to detect pedestrians along the drive through pathway of a vehicle. I have prepared two variant of solutions to demonstrate the usability of such pre-trained model in augmenting a self-driving car.
+The idea that I have worked on is to apply a pre-trained deep learning model to detect pedestrians along the drive through pathway of a vehicle. I have prepared two variants of solution to demonstrate the usability of such pre-trained model in augmenting a self-driving car.
 
 
 ## Setup
