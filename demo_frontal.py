@@ -120,7 +120,8 @@ if __name__ == "__main__":
 
         cap = cv2.VideoCapture(input_path)
         all_images = input_path + '/*.png'
-
+        
+        # Sort the image sequences in the folder before processing
         for fn in sorted(glob.glob(all_images), key=key_func):
             img = cv2.imread(fn)
             img = cv2.resize(img, (768, 432))
