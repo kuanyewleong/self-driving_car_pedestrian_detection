@@ -1,12 +1,8 @@
 # Self-driving Car Pedestrian Detection
-![alt text](https://github.com/kuanyewleong/self-driving_car_pedestrian_detection/blob/master/OxfordRobotCar_dataset.JPG "detection_sample")
 
-<script src="http://vjs.zencdn.net/4.0/video.js"></script>
-<video id="detection_sample" class="video-js vjs-default-skin" controls
-preload="auto" width="683" height="384" poster="https://github.com/kuanyewleong/self-driving_car_pedestrian_detection/blob/master/OxfordRobotCar_dataset.JPG"
-data-setup="{}">
-<source src="https://vimeo.com/289213981" type='video/mp4'>
-</video>
+<a href="https://vimeo.com/289213981
+" target="_blank"><img src="https://github.com/kuanyewleong/self-driving_car_pedestrian_detection/blob/master/OxfordRobotCar_dataset.JPG" 
+alt="IMAGE ALT TEXT HERE" width="768" height="432" border="10" /></a>
 
 This is a demo of pedestrian detection for a self-driving car via a mono-chrome camera sensor. 
 
